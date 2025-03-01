@@ -63,15 +63,15 @@
 
 //mkdr
 
-const fs=require("fs")
-fs.mkdir("node",(err)=>{
-    if(err){
-        console.log(err)
-    }else{
+// const fs=require("fs")
+// fs.mkdir("node",(err)=>{
+//     if(err){
+//         console.log(err)
+//     }else{
 
-        console.log("success")
-    }
-})
+//         console.log("success")
+//     }
+// })
 
 //rmdr
 
@@ -83,3 +83,41 @@ fs.mkdir("node",(err)=>{
 //         console.log("success")
 //     }
 // })
+
+//create a server using http
+
+// const http=require("http");
+// http.createServer((req,res)=>{
+//     res.write("hello.......developer")
+//     res.write("\nwelcome")
+//     res.end()
+// }).listen(5000,()=>{
+//     console.log("server running")
+// })
+
+//routing using http
+
+// const http=require("http")
+// const server=http.createServer((req,res)=>{
+//     if(req.url=="/login"){
+//         res.end("home page")
+//     }else if(req.url=="/product"){
+//         res.end("product page")
+//     }else if(req.url=="/dashboard"){
+//         res.end("dashboard")
+//     }else{
+//         res.end("page not found")
+//     }
+// })
+// server.listen(5000,()=>{
+//     console.log("server running")
+// })
+
+
+//create server using express
+
+
+//req.params
+//req.query
+//add two nums using req.params
+//
